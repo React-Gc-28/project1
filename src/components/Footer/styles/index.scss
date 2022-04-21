@@ -17,7 +17,7 @@
             width: 100%;
         }
         p{
-            font-size: 1rem;
+            font-size: clamp(15px, 2vw, 1.3rem);
             color: white;
             span{
                 color: #008684;
@@ -33,6 +33,7 @@
         ul{
             display: block;
             li{
+                font-size: clamp(15px, 2vw, 1.3rem);
                 color: white;
                 margin-top: 0.5rem;
                 list-style: none;
@@ -60,7 +61,7 @@
        .text{
            margin-top: 2rem;
            display: flex;
-           font-size: large;
+           font-size: clamp(15px, 2vw, 1.3rem);
            color: white;
            list-style: none;
            justify-content: space-evenly;

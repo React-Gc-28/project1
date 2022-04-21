@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div>
+        <div className='img-div'>
           <img
             src='/images/cropped-cropped-cropped-PANERI-small-scaled-1-250x83.webp'
             alt='logo'

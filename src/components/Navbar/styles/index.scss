@@ -7,15 +7,16 @@ nav{
     padding: 1rem;
     height: 100px;
     
-    div{
-    width: 100%;
+    .img-div{
+    width: fit-content;
     img{
-        width: 100%;
-        max-width: 200px;
-        min-width: 100px;
+        width: 200px;
+        
     }
 }
 .list{
+    max-width:500px;
+    width: 100%;
      @media (max-width:600px) {
         &{
             display: none;
@@ -37,7 +38,7 @@ ul{
         a{
             text-decoration: none;
             color: black;
-            font-size: clamp(10px, 2.5vw, 1rem);
+            font-size: clamp(10px, 2vw, 1rem);
             text-align: center;
             font-weight: 400;
         }
@@ -62,7 +63,9 @@ ul{
 
 .reserve {
     place-self: center;
-    width: 150px;
+    min-width: 100px;
+    width: 100%;
+    max-width: 150px;
     padding-inline: 1.5rem;
     height: 50px;
     display: flex;
