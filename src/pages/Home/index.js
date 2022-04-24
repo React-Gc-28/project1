@@ -1,7 +1,14 @@
 import React from "react";
+import HeroImg from "../../components/HeroImg";
+import Map from "../../components/Map";
 import "./index.scss";
 const Home = () => {
-  return <div className='home'>Home</div>;
+  return (
+    <>
+      <HeroImg />
+      <Map />
+    </>
+  );
 };
 
 export default Home;

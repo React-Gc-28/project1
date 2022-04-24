@@ -5,17 +5,20 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    height: 100px;
+    height: 70px;
     
-    div{
-    width: 100%;
+    .img-div{
+    width: fit-content;
     img{
-        width: 100%;
+        min-width:150px;
+        width:20vw;
         max-width: 200px;
-        min-width: 100px;
+        
     }
 }
 .list{
+    max-width:500px;
+    width: 100%;
      @media (max-width:600px) {
         &{
             display: none;
@@ -37,7 +40,7 @@ ul{
         a{
             text-decoration: none;
             color: black;
-            font-size: clamp(10px, 2.5vw, 1rem);
+            font-size: clamp(10px, 2vw, 1rem);
             text-align: center;
             font-weight: 400;
         }
@@ -62,7 +65,9 @@ ul{
 
 .reserve {
     place-self: center;
-    width: 150px;
+    min-width: 100px;
+    width: 100%;
+    max-width: 150px;
     padding-inline: 1.5rem;
     height: 50px;
     display: flex;
@@ -77,12 +82,38 @@ ul{
         background-color:#c1a56d;
     }
 }
+.out{
+
+
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    padding: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    position: absolute;
+    animation: slideOutLeft 0.5s forwards;
+    ul{
+        list-style: none;
+        .active{
+            color: #c1a56d;
+        }
+        li{
+            margin-bottom: 0.5em;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+}
+}
 .dropdown{
     width: 100%;
     background-color: rgb(211, 211, 211);
     padding: 1rem;
     list-style: none;
     margin-bottom: 1rem;
+    
+    animation: slideInLeft 1s forwards;
     ul{
         list-style: none;
         .active{

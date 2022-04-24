@@ -4,14 +4,14 @@ import { MdMenuBook } from "react-icons/md";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "./styles/index.scss";
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState();
   const handleclick = () => {
     setShow(!show);
   };
   return (
     <>
       <nav>
-        <div>
+        <div className='img-div'>
           <img
             src='/images/cropped-cropped-cropped-PANERI-small-scaled-1-250x83.webp'
             alt='logo'
@@ -65,6 +65,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+
       {show && (
         <section className='dropdown'>
           <ul>
@@ -75,6 +76,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
+            <hr />
             <li>
               <NavLink
                 to={"/about"}
@@ -82,6 +84,7 @@ const Navbar = () => {
                 About us
               </NavLink>
             </li>
+            <hr />
             <li>
               <NavLink
                 to={"/products"}
@@ -89,6 +92,7 @@ const Navbar = () => {
                 Our Menu
               </NavLink>
             </li>
+            <hr />
             <li>
               <NavLink
                 to={"/contact"}
@@ -96,6 +100,7 @@ const Navbar = () => {
                 Contact us
               </NavLink>
             </li>
+            <hr />
             <li>
               <NavLink
                 to={"/resavation"}
