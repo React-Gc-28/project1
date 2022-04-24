@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <HeroImg />
-      <Map />
+      {/* <Map /> */}
     </>
   );
 };
