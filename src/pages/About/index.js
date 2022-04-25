@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../../components/About/Banner";
 import InfoShow from "../../components/About/InfoShow";
 import Follow  from "../../components/About/Follow";
+import CounterWrapper from "../../components/About/Counters";
 import colors from "../../components/About/colors";
 import datas from "../../components/About/fakedata.json";
 
@@ -27,6 +28,7 @@ const About = ()=> {
   			{datas.map((data,i)=><InfoShow key={i} {...data}/>)}
   		</article>
   		<Follow/>
+      <CounterWrapper src="./images/bg2.webp"/>
   	</MainContainer>
   );
 };
