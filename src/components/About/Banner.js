@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { TextFrill } from "./TextSpecial";
 
 const Wrapper = styled.section`

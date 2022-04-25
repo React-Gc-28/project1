@@ -21,9 +21,8 @@ const Wrapper = styled.article`
 `;
 
 const CountList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, max-content);
-  grid-gap: 2rem;
+  width: 50%;
+  text-align: center;
   margin-top: 4rem;
 
   @media screen and (max-width: 768px) {
