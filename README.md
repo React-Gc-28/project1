@@ -5,7 +5,7 @@ A future react reastaurant in construction.
 
 - New feature
 - Scalable
-- ✨MaBoom✨
+- ✨Boom✨
 
 ## Features
 
@@ -19,8 +19,6 @@ A future react reastaurant in construction.
 
 > we are working on the capstone project and we will be accepting any suggetions
 > or feedbacks via email or other social media.
-
-
 ## Stack
 
 Tech stacks we are focusing on:
@@ -50,8 +48,6 @@ For production environments...
 ```sh
 npm run build
 ```
-
-
 ## License
 
 MIT
