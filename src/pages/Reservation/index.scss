@@ -13,6 +13,7 @@ color:  #005e5c;
 font-size: 1.3rem;
 input{
     margin-block: 0.5rem;
+    height: 150px;
     outline: none; height: 20px;
     background-color: aliceblue;
     border: 1px solid black;
@@ -46,5 +47,10 @@ input{
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #c1a56d ;
+        transform: scale(0.9);
+    }
 }
 }

@@ -1,6 +1,12 @@
 import React from "react";
+import ContactUs from "../../components/ContactUs/Contact";
 const Contact = () => {
-  return <></>;
+  return (
+    <>
+      {/* <Map /> */}
+      <ContactUs />
+    </>
+  );
 };
 
 export default Contact;

@@ -1,6 +1,49 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import "./index.scss";
 const Reservation = () => {
+  const date = new Date();
+  date.setDate(date.getDate().toLocaleString());
+  const [defaultValue, setDefaultValue] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    party: 0,
+    date: "",
+    time: "",
+    checked: false,
+  });
+  const formRef = useRef();
+  const { register, handleSubmit } = useForm();
+  const sendEmail = (e) => {
+    emailjs
+      .sendForm(
+        "service_mxit5bf",
+        "template_iwiyh0i",
+        formRef.current,
+        "yXs_m-FITMaIFlFSB"
+      )
+      .then(
+        () => {
+          alert("Reservation made");
+          setDefaultValue({
+            firstName: "",
+            lastName: "",
+            email: "",
+            party: 0,
+            date: "",
+            time: "",
+            checked: false,
+          });
+        },
+        (errors) => {
+          alert("Message not sent, please Try again");
+          console.log(errors);
+        }
+      );
+  };
+
   return (
     <>
       <div className='formComponent'>
@@ -8,18 +51,31 @@ const Reservation = () => {
           Make a reservation <hr />
         </h1>
 
-        <form className='reserve-form'>
+        <form
+          className='reserve-form'
+          ref={formRef}
+          onSubmit={handleSubmit(sendEmail)}>
           <label htmlFor='Name'>
             Enter Your Name
             <input
+              {...register("firstName")}
+              value={defaultValue.firstName}
+              onChange={({ target }) =>
+                setDefaultValue({ ...defaultValue, firstName: target.value })
+              }
               type='text'
-              name='Firstname'
+              name='firstName'
               placeholder='Firstname'
               required
             />
             <input
+              {...register("lastName")}
+              value={defaultValue.lastName}
+              onChange={({ target }) =>
+                setDefaultValue({ ...defaultValue, lastName: target.value })
+              }
               type='text'
-              name='Lastname'
+              name='lastName'
               placeholder='Lastname'
               required
             />
@@ -27,25 +83,74 @@ const Reservation = () => {
 
           <label htmlFor='Email'>
             Email
-            <input type='email' name='Email' placeholder='Email' required />
+            <input
+              type='email'
+              {...register("email")}
+              onChange={({ target }) =>
+                setDefaultValue({ ...defaultValue, email: target.value })
+              }
+              value={defaultValue.email}
+              name='email'
+              placeholder='Email'
+              required
+            />
           </label>
           <label htmlFor='party'>
             Party
-            <input type='number' required name='party' id='' />
+            <input
+              {...register("party")}
+              value={defaultValue.party}
+              onChange={({ target }) =>
+                setDefaultValue({
+                  ...defaultValue,
+                  party: target.valueAsNumber,
+                })
+              }
+              type='number'
+              name='party'
+              placeholder='number of people'
+              required
+            />
           </label>
           <label htmlFor='DATE'>
             Date
-            <input type='date' required name='date' id='r' />
-            <input type='time' required name='' id='' />
+            <input
+              onChange={({ target }) =>
+                setDefaultValue({ ...defaultValue, date: target.value })
+              }
+              {...register("date")}
+              type='date'
+              required
+              name='date'
+              id='r'
+            />
+            <input
+              onChange={({ target }) =>
+                setDefaultValue({ ...defaultValue, time: target.value })
+              }
+              type='time'
+              {...register("time")}
+              required
+              name='time'
+              id=''
+            />
           </label>
           <div className='checked'>
-            <input type='checkbox' name='checked' id='' required />
+            <input
+              type='checkbox'
+              {...register("checked")}
+              value={defaultValue.checked}
+              name='checked'
+              id=''
+              required
+            />
             <p>Please confirm your reservation with us</p>
           </div>
-          <input className=' submit' type='submit' value='reserve' />
+          <input className='submit' type='submit' value='reserve' />
         </form>
       </div>
     </>
   );
 };
 export default Reservation;
+//
