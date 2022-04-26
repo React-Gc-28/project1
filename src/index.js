@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./Globalstyles.scss";
 import reportWebVitals from "./reportWebVitals";
+import './fonts/Questrial-Regular.ttf';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
