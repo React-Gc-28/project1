@@ -361,10 +361,10 @@ const MenuItem = () => {
           style={{ width: "100%", backgroundSize: "cover" }}
         />
         <div>
-          <p className="Products-text">Menu</p>
+          <p className="menu-text">Menu</p>
           <div>
             <img
-              className="Products-under"
+              className="menu-under"
               src="/images/frill-free-img.webp"
               alt="Products underline"
             />
@@ -372,7 +372,6 @@ const MenuItem = () => {
         </div>
       </section>
       <section className="section">
-        console.log(menu1); return (
         <div className="grid grid1">
           <div>
             <h2 className="sub-head">Various Breads & Dips</h2>
