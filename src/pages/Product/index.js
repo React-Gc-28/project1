@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Fragment } from "react";
+import MenuItem from "../../components/Menu/MenuItem";
+// import MenuList from "../../components/Menu/MenuList";
 
-const Product = () => {
-  return (
-    <div>Product</div>
-  )
-}
 
-export default Product
+
+const Products = () => {
+  return <Fragment>
+    {/* <MenuList /> */}
+    <MenuItem />
+  </Fragment>;
+};
+
+export default Products;

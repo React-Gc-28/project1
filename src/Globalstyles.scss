@@ -4,6 +4,15 @@
     font-family: "Titilium Web";
     src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap');
 }
+
+// Questrial Fonts
+@font-face {
+    font-family: "Questrial";
+    src: local("Questrial"),
+     url("./fonts/Questrial-Regular.ttf") format("truetype");
+    font-weight: normal;
+    }
+    
 :root{
     font-size: 18px;
     font-weight: 400;

@@ -37,21 +37,21 @@ const Navbar = () => {
               <NavLink
                 to={"/about"}
                 className={({ isActive }) => isActive && "active"}>
-                About us
+                About Us
               </NavLink>
             </li>
             <li>
               <NavLink
                 to={"/products"}
                 className={({ isActive }) => isActive && "active"}>
-                Our Menu
+                Menu
               </NavLink>
             </li>
             <li>
               <NavLink
                 to={"/contact"}
                 className={({ isActive }) => isActive && "active"}>
-                Contact us
+                Contact
               </NavLink>
             </li>
             <li>
