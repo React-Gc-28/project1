@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project1/static/css/main.cfab1963.css",
+    "main.css": "/project1/static/css/main.4ee69e45.css",
     "main.js": "/project1/static/js/main.396db766.js",
     "static/js/787.ef264814.chunk.js": "/project1/static/js/787.ef264814.chunk.js",
     "static/media/Alain-Ducasse-scaled.jpg": "/project1/static/media/Alain-Ducasse-scaled.1689138e64fb02433b16.jpg",
@@ -8,12 +8,12 @@
     "static/media/pic28-free-img.webp": "/project1/static/media/pic28-free-img.8a505376408712fa241a.webp",
     "static/media/pic48-free-img.jpg": "/project1/static/media/pic48-free-img.c1331d76d43a6b5453ce.jpg",
     "index.html": "/project1/index.html",
-    "main.cfab1963.css.map": "/project1/static/css/main.cfab1963.css.map",
+    "main.4ee69e45.css.map": "/project1/static/css/main.4ee69e45.css.map",
     "main.396db766.js.map": "/project1/static/js/main.396db766.js.map",
     "787.ef264814.chunk.js.map": "/project1/static/js/787.ef264814.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfab1963.css",
+    "static/css/main.4ee69e45.css",
     "static/js/main.396db766.js"
   ]
 }
