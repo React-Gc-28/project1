@@ -11,6 +11,8 @@ import {
   useMapEvents,
   useMapEvent,
 } from "react-leaflet";
+import Welcome from "../../components/Home/Welcome";
+import Menu from "../../components/Home/Menu";
 // function MyComponent() {
 //   const map = useMap();
 //   console.log("map center:", map.getCenter());
@@ -39,6 +41,8 @@ const Home = () => {
   return (
     <>
       <HeroImg />
+      <Welcome />
+      <Menu />
       <AnimationOnScroll animateIn='animate__backInLeft' duration={2}>
         <div className='map'>
           <h1 className='title'>Visit us</h1>

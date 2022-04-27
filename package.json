@@ -1,5 +1,6 @@
 {
   "name": "resturant-app",
+  "homepage": "https://React-Gc-28.github.io/project1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.30.0",
+    "react-horizontal-scrolling-menu": "^2.7.1",
     "react-icons": "^4.3.1",
     "react-leaflet": "^4.0.0",
     "react-router-dom": "^6.3.0",
@@ -23,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm tun build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
