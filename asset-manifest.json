@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project1/static/css/main.b5e1a2ad.css",
-    "main.js": "/project1/static/js/main.5d856b02.js",
+    "main.js": "/project1/static/js/main.776e0596.js",
     "static/js/787.ef264814.chunk.js": "/project1/static/js/787.ef264814.chunk.js",
     "static/media/Alain-Ducasse-scaled.jpg": "/project1/static/media/Alain-Ducasse-scaled.1689138e64fb02433b16.jpg",
     "static/media/Questrial-Regular.ttf": "/project1/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
@@ -9,11 +9,11 @@
     "static/media/pic48-free-img.jpg": "/project1/static/media/pic48-free-img.c1331d76d43a6b5453ce.jpg",
     "index.html": "/project1/index.html",
     "main.b5e1a2ad.css.map": "/project1/static/css/main.b5e1a2ad.css.map",
-    "main.5d856b02.js.map": "/project1/static/js/main.5d856b02.js.map",
+    "main.776e0596.js.map": "/project1/static/js/main.776e0596.js.map",
     "787.ef264814.chunk.js.map": "/project1/static/js/787.ef264814.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5e1a2ad.css",
-    "static/js/main.5d856b02.js"
+    "static/js/main.776e0596.js"
   ]
 }
