@@ -1,6 +1,6 @@
 {
   "name": "resturant-app",
-  "homepage": "http://react-gc-28.github.io/project1/",
+  "homepage": "http://React-Gc-28.github.io/project1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

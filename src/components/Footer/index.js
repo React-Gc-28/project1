@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-div-1'>
-        <img src='/images/Transparent-1024x175.webp' alt='' />
+        <img src='./images/Transparent-1024x175.webp' alt='' />
         <p>
           Copyright © 2021 Paneri Creative Mediterranean Cuisine <br />
           <span> Powered by e-Marketing Center</span>
