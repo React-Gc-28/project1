@@ -24,7 +24,7 @@ const Welcome = () => {
           <div className='img-div'>
             <div className='img'>
               <img
-                src='/images/NapoleonSignature2_1050x700-600x400.webp'
+                src='./images/NapoleonSignature2_1050x700-600x400.webp'
                 alt='signature'
               />
             </div>

@@ -418,7 +418,7 @@ const MenuItem = () => {
             <img className="grid-img" src="/images/1-681x1024.webp" alt="parfet" />
           </div>
         </div>
-        );
+        
         <div className="grid grid2">
           <div>
             <img className="grid-img" src="/images/2-681x1024.webp" alt="parfet" />
@@ -480,7 +480,7 @@ const MenuItem = () => {
                 <p className="sub-header">Salty Loukoumades & seaweed</p>
                 <p className="grid-price">6,80€</p>
               </div>
-              <p>Tomato mousse, bean sprouts, maple syrup</p>
+              <p className="sub-text">Tomato mousse, bean sprouts, maple syrup</p>
             </div>
 
             <div className="grid-text">

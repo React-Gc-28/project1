@@ -7,8 +7,6 @@ import {
   Marker,
   Popup,
   TileLayer,
-  useMap,
-  useMapEvents,
   useMapEvent,
 } from "react-leaflet";
 import Welcome from "../../components/Home/Welcome";

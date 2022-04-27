@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { MdMenuBook } from "react-icons/md";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "./styles/index.scss";
