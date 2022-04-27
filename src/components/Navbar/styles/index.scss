@@ -108,12 +108,11 @@ ul{
 }
 .dropdown{
     width: 100%;
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(241, 227, 227, 0.473);
     padding: 1rem;
     list-style: none;
-    margin-bottom: 1rem;
     
-    animation: slideInLeft 1s forwards;
+    animation: slideInDown 1s forwards;
     ul{
         list-style: none;
         .active{

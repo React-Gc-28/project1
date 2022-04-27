@@ -56,7 +56,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to={"/resavation"}
+                to={"/reservation"}
                 className={`reserve  ${({ isActive }) =>
                   isActive && "active"}`}>
                 Reservation
@@ -103,7 +103,7 @@ const Navbar = () => {
             <hr />
             <li>
               <NavLink
-                to={"/resavation"}
+                to={"/reservation"}
                 className={` ${({ isActive }) => isActive && "active"}`}>
                 Reservation
               </NavLink>
